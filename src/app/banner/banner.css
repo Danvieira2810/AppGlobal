@@ -130,3 +130,30 @@
 .break {
   display: block;
 }
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 16px;
+}
+
+@media (max-width: 768px) {
+  .banner-text h1 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+
