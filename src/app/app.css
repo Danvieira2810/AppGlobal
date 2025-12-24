@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+.assistencia-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+@media (max-width: 768px) {
+  .assistencia-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+}
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 16px;
+}
+
+@media (max-width: 768px) {
+  .banner-text h1 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+.leonardo-section {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+@media (max-width: 768px) {
+  .leonardo-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leonardo-section img {
+    max-width: 280px;
+    width: 100%;
+  }
+}
