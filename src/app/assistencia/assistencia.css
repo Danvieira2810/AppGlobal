@@ -134,3 +134,21 @@
   }
 
 }
+.leonardo-section {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+@media (max-width: 768px) {
+  .leonardo-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leonardo-section img {
+    max-width: 280px;
+    width: 100%;
+  }
+}
+
