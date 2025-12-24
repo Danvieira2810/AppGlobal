@@ -1,0 +1,31 @@
+<section class="banner">
+ <img src=".//public/banner7.png" alt="">
+   <div class="banner-texto slide-in">
+<div class="lang-switch">
+  <button
+    (click)="setPt()"
+    [class.active]="lang.currentLang === 'pt'">
+    PT
+  </button>
+
+  <button
+    (click)="setEn()"
+    [class.active]="lang.currentLang === 'en'">
+    US
+  </button>
+</div>
+<ng-container >
+
+ <h1 class="banner-title">
+  <span>
+    {{ lang.currentLang === 'pt' ? 'Excelência em' : 'Business ' }}
+  </span>
+  <span class="break">
+    {{ lang.currentLang === 'pt' ? 'Aviação Executiva' : 'Aviation Excellence' }}
+  </span>
+</h1>
+</ng-container>
+
+
+  </div>
+

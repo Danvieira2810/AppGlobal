@@ -1,0 +1,26 @@
+.header {
+  width: 87%;
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.menu {
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #1a1a1a;
+  font-family: 'Times New Roman', serif;
+}

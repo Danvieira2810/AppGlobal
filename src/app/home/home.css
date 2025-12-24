@@ -1,0 +1,13 @@
+.assistencia {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.assistencia h2 {
+  font-family: 'Times New Roman', serif;
+  font-size: 36px;
+  color: #b08d57;
+  border-bottom: 2px solid #b08d57;
+  display: inline-block;
+  padding-bottom: 10px;
+}
