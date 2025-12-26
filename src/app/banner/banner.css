@@ -156,4 +156,26 @@
     line-height: 1.2;
   }
 }
+@media (max-width: 768px) {
+
+  .banner {
+    position: relative;
+    padding: 24px 16px;
+  }
+
+  .banner-title {
+    position: absolute;
+    bottom: 24px;   /* força o texto sobre o banner */
+    left: 16px;
+    right: 16px;
+
+    font-size: 26px;   /* tamanho correto mobile */
+    line-height: 1.2;
+    text-align: left;
+
+    max-width: 100%;
+  }
+
+}
+
 
