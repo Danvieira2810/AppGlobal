@@ -130,6 +130,7 @@
 .break {
   display: block;
 }
+
 .banner {
   position: relative;
 }
@@ -140,40 +141,56 @@
   display: block;
 }
 
-.banner-text {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 16px;
-}
+
+
+
+
 
 @media (max-width: 768px) {
-  .banner-text h1 {
-    font-size: 14px;
-    line-height: 1.2;
+
+  .banner-texto {
+    align-items: flex-start;      /* joga o texto para baixo */
+    justify-content: flex-start;
+    padding: 60px 16px 0px;
+    text-align: left;
+
   }
+
+  .banner-texto h1 {
+    position: static;           /* REMOVE o absolute no mobile */
+    font-size: 26px;            /* tamanho correto */
+    line-height: 1.25;
+    max-width: 90%;            /* NÃO deixa vazar */
+    word-break: normal;
+    white-space: normal;
+    margin: 0;
+  }
+
 }
 @media (max-width: 768px) {
 
   .banner {
-    position: relative;
-    padding: 24px 16px;
+    min-height: unset !important;
+    height: auto !important;
+    padding-bottom: 16px;
   }
 
-  .banner-title {
-    position: absolute;
-    bottom: 24px;   /* força o texto sobre o banner */
-    left: 16px;
-    right: 16px;
+}
+@media (max-width: 768px) {
 
-    font-size: 26px;   /* tamanho correto mobile */
-    line-height: 1.2;
-    text-align: left;
+  .banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 
-    max-width: 100%;
+}
+@media (max-width: 768px) {
+
+  .banner-text {
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
 }
